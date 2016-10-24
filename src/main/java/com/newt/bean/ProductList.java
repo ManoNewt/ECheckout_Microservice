@@ -1,5 +1,6 @@
 package com.newt.bean;
 
+import com.newt.commonutils.Productstatus;
 
 public class ProductList {
 
@@ -12,6 +13,10 @@ public class ProductList {
 	 private long customerId;
 	
 	 private int checkoutOrderId;
+	 
+	 private Productstatus productStatus; 
+	 
+	 private int shoppingcartId;
 	
 	 public int getProductcheckoutId() {
 	  return productcheckoutId;
@@ -52,12 +57,28 @@ public class ProductList {
 	 public void setCheckoutOrderId(int checkoutOrderId) {
 	  this.checkoutOrderId = checkoutOrderId;
 	 }
+	 
+	public Productstatus getProductStatus() {
+		return productStatus;
+	}
+
+	public void setProductStatus(Productstatus productStatus) {
+		this.productStatus = productStatus;
+	}
+
+	public int getShoppingcartId() {
+		return shoppingcartId;
+	}
+
+	public void setShoppingcartId(int shoppingcartId) {
+		this.shoppingcartId = shoppingcartId;
+	}
 
 	@Override
 	public String toString() {
 		return "ProductList [productcheckoutId=" + productcheckoutId + ", productId=" + productId + ", productName="
-				+ productName + ", customerId=" + customerId + ", checkoutOrderId=" + checkoutOrderId + "]";
+				+ productName + ", customerId=" + customerId + ", checkoutOrderId=" + checkoutOrderId
+				+ ", productStatus=" + productStatus + ", shoppingcartId=" + shoppingcartId + "]";
 	}
-	
 
 }
