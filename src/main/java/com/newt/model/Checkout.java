@@ -60,7 +60,6 @@ public class Checkout implements Serializable{
 	private Date cardExpDate;
 	
 	
-
 	public Checkout() {
 	}
 
